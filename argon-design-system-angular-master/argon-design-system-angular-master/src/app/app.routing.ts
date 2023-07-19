@@ -3,6 +3,7 @@ import { CommonModule, } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
+import { IdentityFormComponent } from './identity-form/identity-form.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'landing', component: LandingComponent },
   { path: 'login', component: LoginComponent },
   { path: 'verification', component: ProfileVerificationComponent },
+  { path: 'identity-form', component: IdentityFormComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

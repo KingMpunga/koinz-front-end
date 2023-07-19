@@ -1,0 +1,193 @@
+<main>
+  <section class="section section-shaped section-lg">
+    <div class="shape shape-style-1 bg-gradient-default">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="row justify-content-center">
+    <div class="col-lg-9">
+    <div class="container pt-lg-md">
+      <div class="row justify-content-left">
+        <h3 class="">Tell us more about you</h3>
+        <span class="">We need the following information and documentation so that we can verify you in line with the Financial Intelligence Centre Act. 38 of 2001.</span>
+        <span>If you have any questions, please email us at
+          <a class="" href="mailto:compliance@meshtrade.co">compliance@meshtrade.co</a>
+        </span>
+      </div>
+
+<nav (click)="togglePersonal()" style="cursor:pointer; margin-top:20px; margin-bottom:10px;" class="navbar navbar-expand-lg navbar-dark bg-default"><div _ngcontent-c8="" class="container"><a _ngcontent-c8="" class="navbar-brand" href="javascript:void(0)">Personal Details</a><button _ngcontent-c8="" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar-default" data-toggle="collapse" type="button"><span _ngcontent-c8="" class="navbar-toggler-icon"></span></button><div _ngcontent-c8="" class="collapse navbar-collapse" id="navbar-default"><div _ngcontent-c8="" class="navbar-collapse-header"><div _ngcontent-c8="" class="row"><div _ngcontent-c8="" class="col-6 collapse-brand"><a _ngcontent-c8="" href="javascript:void(0)"><img _ngcontent-c8="" src="./assets/img/brand/blue.png"></a></div><div _ngcontent-c8="" class="col-6 collapse-close"><button _ngcontent-c8="" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar-default" data-toggle="collapse" type="button"><span _ngcontent-c8=""></span><span _ngcontent-c8=""></span></button></div></div></div><ul _ngcontent-c8="" class="navbar-nav ml-lg-auto"><li _ngcontent-c8="" class="nav-item"><a _ngcontent-c8="" class="nav-link nav-link-icon" href="javascript:void(0)"><i _ngcontent-c8="" class="ni ni-favourite-28"></i><span _ngcontent-c8="" class="nav-link-inner--text d-lg-none">Discover</span></a></li><li _ngcontent-c8="" class="nav-item"><a _ngcontent-c8="" class="nav-link nav-link-icon" href="javascript:void(0)"><i _ngcontent-c8="" class="ni ni-notification-70"></i><span _ngcontent-c8="" class="nav-link-inner--text d-lg-none">Profile</span></a></li><li _ngcontent-c8="" class="nav-item dropdown" ngbdropdown="" placement="bottom-right"><a _ngcontent-c8="" aria-haspopup="true" class="nav-link nav-link-icon no-caret dropdown-toggle" id="navbar-default_dropdown_1" ngbdropdowntoggle="" aria-expanded="false"><i _ngcontent-c8="" class="ni ni-settings-gear-65"></i><span _ngcontent-c8="" class="nav-link-inner--text d-lg-none">Settings</span></a><div _ngcontent-c8="" aria-labelledby="navbar-default_dropdown_1" class="dropdown-menu-right dropdown-menu" ngbdropdownmenu="" x-placement="bottom-right"><a _ngcontent-c8="" class="dropdown-item" href="javascript:void(0)">Action</a><a _ngcontent-c8="" class="dropdown-item" href="javascript:void(0)">Another action</a><div _ngcontent-c8="" class="dropdown-divider"></div><a _ngcontent-c8="" class="dropdown-item" href="javascript:void(0)">Something else here</a></div></li></ul></div></div></nav>
+
+
+      <div class="row justify-content-center">
+        <div class="col-lg-5" *ngIf="personal">
+          
+          <div class="card-body px-lg-5 py-lg-5">
+            <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" role="form">
+              <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="First Name" formControlName="email" type="email" (focus)="focus=true" (blur)="focus=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Middle Name(s)" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Last Name" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Date of Birth" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Source of Income" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Source Wealth" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-5" *ngIf="personal">
+          
+          <div class="card-body px-lg-5 py-lg-5">
+            <div class=" text-muted mb-4">
+              <p><b class="text-primary">Nationality:</b> South African</p>
+            </div>
+            <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" role="form">
+              <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Identification Type" formControlName="email" type="email" (focus)="focus=true" (blur)="focus=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Identification Number" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Passport Expiry Date" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+
+        
+<nav (click)="toggleResidential()" style="cursor:pointer" class="navbar navbar-expand-lg navbar-dark bg-default"><div _ngcontent-c8="" class="container"><a _ngcontent-c8="" class="navbar-brand" href="javascript:void(0)">Residential Address</a><button _ngcontent-c8="" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar-default" data-toggle="collapse" type="button"><span _ngcontent-c8="" class="navbar-toggler-icon"></span></button><div _ngcontent-c8="" class="collapse navbar-collapse" id="navbar-default"><div _ngcontent-c8="" class="navbar-collapse-header"><div _ngcontent-c8="" class="row"><div _ngcontent-c8="" class="col-6 collapse-brand"><a _ngcontent-c8="" href="javascript:void(0)"><img _ngcontent-c8="" src="./assets/img/brand/blue.png"></a></div><div _ngcontent-c8="" class="col-6 collapse-close"><button _ngcontent-c8="" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar-default" data-toggle="collapse" type="button"><span _ngcontent-c8=""></span><span _ngcontent-c8=""></span></button></div></div></div><ul _ngcontent-c8="" class="navbar-nav ml-lg-auto"><li _ngcontent-c8="" class="nav-item"><a _ngcontent-c8="" class="nav-link nav-link-icon" href="javascript:void(0)"><i _ngcontent-c8="" class="ni ni-favourite-28"></i><span _ngcontent-c8="" class="nav-link-inner--text d-lg-none">Discover</span></a></li><li _ngcontent-c8="" class="nav-item"><a _ngcontent-c8="" class="nav-link nav-link-icon" href="javascript:void(0)"><i _ngcontent-c8="" class="ni ni-notification-70"></i><span _ngcontent-c8="" class="nav-link-inner--text d-lg-none">Profile</span></a></li><li _ngcontent-c8="" class="nav-item dropdown" ngbdropdown="" placement="bottom-right"><a _ngcontent-c8="" aria-haspopup="true" class="nav-link nav-link-icon no-caret dropdown-toggle" id="navbar-default_dropdown_1" ngbdropdowntoggle="" aria-expanded="false"><i _ngcontent-c8="" class="ni ni-settings-gear-65"></i><span _ngcontent-c8="" class="nav-link-inner--text d-lg-none">Settings</span></a><div _ngcontent-c8="" aria-labelledby="navbar-default_dropdown_1" class="dropdown-menu-right dropdown-menu" ngbdropdownmenu="" x-placement="bottom-right"><a _ngcontent-c8="" class="dropdown-item" href="javascript:void(0)">Action</a><a _ngcontent-c8="" class="dropdown-item" href="javascript:void(0)">Another action</a><div _ngcontent-c8="" class="dropdown-divider"></div><a _ngcontent-c8="" class="dropdown-item" href="javascript:void(0)">Something else here</a></div></li></ul></div></div></nav>
+
+
+      <div class="row justify-content-center">
+        <div class="col-lg-5" *ngIf="residential">
+          
+          <div class="card-body px-lg-5 py-lg-5">
+            <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" role="form">
+              <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Address 1" formControlName="email" type="email" (focus)="focus=true" (blur)="focus=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Address 2" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Suburb" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Postal Code" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-5" *ngIf="residential">
+          
+          <div class="card-body px-lg-5 py-lg-5">
+            <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" role="form">
+              
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="City" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Province" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <input class="form-control" placeholder="Country" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card-body px-lg-5 py-lg-5">
+
+      <div class="text-center" style="margin-top:-50px; margin-bottom:50px;">
+        <button type="button"  (click)="onSubmit(form.value)" class="btn btn-primary my-4">Save</button>
+      
+        <button type="button"  (click)="onSubmit(form.value)" class="btn btn-primary my-4">Submit</button>
+      </div>
+
+      <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" role="form">
+        <div class=" text-muted mb-4" style="margin-bottom:30px;">
+        <p class="text-primary">Supporting Documents/ Media</p>
+      </div>
+        <div class=" text-muted mb-4">
+          <p class="text-primary">Identification Document</p>
+        </div>
+        <div class="form-group" [ngClass]="{'focused':focus1===true}">
+          <div class="input-group input-group-alternative">
+            <input class="form-control" placeholder="Identification Document" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+          </div>
+        </div>
+        <div class=" text-muted mb-4">
+          <p class="text-primary">Proof of Address</p>
+        </div>
+        <div class="form-group" [ngClass]="{'focused':focus1===true}">
+          <div class="input-group input-group-alternative">
+            <input class="form-control" placeholder="Proof of Address" formControlName="password" type="password" (focus)="focus1=true" (blur)="focus1=false">
+          </div>
+        </div>
+        <div class="form-group">
+          <small>Upload .jpg .jpeg .png and pdf files not exceeding 5MB</small>
+        </div>
+      </form>
+    </div>
+    
+    
+  </div>
+    </div>
+  </section>
+</main>
