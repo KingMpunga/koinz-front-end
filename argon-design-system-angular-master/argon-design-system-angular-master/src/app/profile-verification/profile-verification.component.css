@@ -1,0 +1,17 @@
+
+
+.sample-wrapper {
+    overflow-y: auto;
+    max-height: 470px;
+    margin: 8px;
+}
+
+igx-switch {
+    padding: 16px;
+}
+
+.nested-accordion {
+    margin: 10px 16px;
+}
+
+
